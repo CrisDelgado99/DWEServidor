@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <?php 
+    include ("./biblioArrayBi/biblioArrayBi.php");
 
-    <?php
-    echo "Cristina Delgado Muñoz"
+    impArrayBiInt(generaArrayBiInt(4, 5, 0, 20));
+    
     ?>
 </body>
 </html>
