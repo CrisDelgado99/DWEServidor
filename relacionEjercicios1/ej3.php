@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        echo "
+        echo"
         <table>
             <tr>
                 <th>Español</th>
@@ -23,6 +23,8 @@
             </tr>
             
         </table>
+        
+        
         "
     ?>
 </body>

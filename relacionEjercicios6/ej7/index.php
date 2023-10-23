@@ -8,8 +8,17 @@
 <body>
     <?php 
     include ("./biblioArrayBi/biblioArrayBi.php");
+    $arrayBi = generaArrayBiInt(4, 5, 0, 20);
 
-    impArrayBiInt(generaArrayBiInt(4, 5, 0, 20));
+    impArrayBiInt($arrayBi);
+
+    echo "<br><br>";
+
+    filaDeArrayBiInt($arrayBi, 3);
+
+    echo "<br><br>";
+    
+    columnaDeArrayBiInt($arrayBi,3);
     
     ?>
 </body>

@@ -65,33 +65,16 @@
     }
 
     function rotaArrayIzq($arrInt, $n){
-        $arrDelante = [];
-        $arrDetras = [];
-        for($i = 0; $i < count($arrInt); $i++){
-            if($i < $n){
-                array_push($arrDetras, $arrInt[$i]) ;
-            } else {
-                array_push($arrDelante, $arrInt[$i]) ;
-            }
-        }
-
-        return array_merge($arrDelante, $arrDetras);
-        
+        $n = $n % count($arrInt);
+        $arrDelante = array_splice($arrInt, 0, $n);
+        $arrDetras = $arrInt;
+        return array_merge($arrDetras, $arrDelante);
     }
-
+    
     function rotaArrayDer($arrInt, $n){
-        $arrDelante = [];
-        $arrDetras = [];
-        for($i = 0; $i < count($arrInt); $i++){
-            
-            if($i < count($arrInt) - $n){
-                array_push($arrDelante, $arrInt[$i+$n]) ;
-            } else {
-                array_push($arrDetras, $arrInt[$i-$n]) ;
-            }
-        }
-
+        $n = $n % count($arrInt);
+        $arrDelante = array_splice($arrInt, count($arrInt) - $n, $n);
+        $arrDetras = $arrInt;
         return array_merge($arrDelante, $arrDetras);
-        
     }
 ?>
