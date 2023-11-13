@@ -1,6 +1,6 @@
 <?php
 
-function generaArrayBiInt($n, $m, $min, $max){
+function generaArrayBiInt($n, $m, $max, $min){
     $arrayBi = [];
     for($i = 0; $i < $n; $i++){
         for($j = 0; $j < $m; $j++){
