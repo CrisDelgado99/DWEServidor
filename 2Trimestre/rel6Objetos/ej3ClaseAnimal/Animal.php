@@ -1,20 +1,23 @@
 <?php
 
-    class Animal{
+    abstract class Animal{
         //Atributos estáticos (de clase)
-        private static $numAnimales;
+        protected static $numAnimales = 0;
         
         //Atributos de instancia (objeto)
-        private $color;
+        protected $color;
         protected $numPatas;
-        private $nombre;
-        private $edad;
-        private $imagen;
+        protected $nombre;
+        protected $edad;
 
 
-        public function __construct($nombre, $edad){
+        public function __construct($nombre, $edad, $color){
             $this->nombre = $nombre;
             $this->edad = $edad;
+            $this->color = $color;
+        }
+
+        public function hablar(){
 
         }
     }

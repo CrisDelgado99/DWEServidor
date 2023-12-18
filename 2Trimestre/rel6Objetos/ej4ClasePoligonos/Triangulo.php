@@ -6,7 +6,7 @@
         private $altura;
 
         public function __construct($base, $altura){
-            parent::__construct(4);
+            parent::__construct(3);
             $this->base = $base;
             $this->altura = $altura;
         }

@@ -26,7 +26,7 @@
     /////////////////////////////////////////////////////////////////////////////////////////////
     echo '<br>';
 
-    $miCuadrado = new Cuadrado(70);
+    $miCuadrado = new Cuadrado(7);
 
     echo '<h2>' . $miCuadrado . '</h2>';
 

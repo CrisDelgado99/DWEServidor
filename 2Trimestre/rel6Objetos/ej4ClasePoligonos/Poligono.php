@@ -1,6 +1,6 @@
 <?php
 
-class Poligono{
+abstract class Poligono{
     private $numLados;
 
     public function __construct($numLados){ 
