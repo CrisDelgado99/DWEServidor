@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'ubuntuMono';
+    src: url('./../fuentes/UbuntuMono-Bold.ttf');
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(179, 212, 228);
+}
+
+th, h1, h2, h3, h4{
+    font-family: 'ubuntuMono';
+}
+
+th, h1, h2, h3, h4, p{
+    color: rgb(67, 36, 16);
+}
+
+#titulo{
+    text-transform: uppercase;
+    font-size: 30pt;
+}
+
+#divTabla{
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: url('./../imgs/cork.jpg');
+    background-size: 1200px;
+    background-repeat: repeat;
+
+    border: 20px outset rgba(33, 146, 181, 0.908);
+    box-shadow: inset 3px 3px 2px 0px rgb(121, 95, 28);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituTd{
+    padding-left: 20px;
+    text-transform: uppercase
+}
+
+table{
+    background-image: url('./../imgs/hojaLineas.jpeg');
+    background-position: center;
+    background-size: 900px;
+    border-radius: 25px;
+    min-height: 100px;
+    box-shadow: 3px 3px 2px 0px rgb(121, 95, 28);
+    padding: 20px;
+    margin: 20px;
+    width: 700px;
+}
+
+th{
+    padding: 4px;
+    padding-top: 15px;
+    font-size: 16pt;
+    text-align: center;
+}
+
+td{
+    min-width: 100px;
+    max-width: 300px;
+    text-align: center;
+    white-space: normal; /* or 'pre-wrap' for preserving whitespace */
+}
+
+#tituloTablon{
+    background-image: url('./../imgs/notaTitulo.png');
+    padding: 30px;
+    background-size: 250px 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
