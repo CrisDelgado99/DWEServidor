@@ -16,7 +16,7 @@
         }
 
         public function calcPerimetro(){
-            return 'En mantenimiento';
+            return 'En mantenimiento'; //No puedo calcular los lados porque no sé el tipo de triángulo
         }
 
         public function __toString(){
